@@ -33,6 +33,7 @@
 * {
     --body-font: "Work Sans", Helvetica, Arial, sans-serif;
     --title-font: "Bebas Neue", Helvetica, Arial, sans-serif;
+   
 }
 
 .g-custom{
@@ -57,6 +58,7 @@ html {
     padding: 0;
     margin: 0;
     background: #ffffff;
+    scrollbar-track-color: #e50000;
 }
 
 body {    
@@ -67,6 +69,10 @@ body {
     padding: 0;
     line-height: 1.8em;
     word-spacing: 0px;
+    
+}
+.scrollbar{
+   
 }
 
 .dark-scheme{
