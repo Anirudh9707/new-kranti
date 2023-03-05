@@ -9085,6 +9085,7 @@ a:hover,
     width: 100%;
 }
 
+
 .carousel-item img {
     width: 100%;
     height: auto;
@@ -15131,6 +15132,8 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 	.countdown-classic .countdown-counter {
 		padding: 0 20px;
 	}
+    
+    
 }
 
 @media (min-width: 768px) {
@@ -15159,6 +15162,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 		margin-top: -12px;
 	}
 }
+
 /* -------------------------------------------------- 
     design for 768px
     /* ================================================== */
@@ -16284,6 +16288,8 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
     #topbar {
         display: none;
     }
+   
+    
 }
 @media (max-width: 380px) {
      .rg  {
