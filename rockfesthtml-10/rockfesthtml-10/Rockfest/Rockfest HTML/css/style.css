@@ -71,9 +71,7 @@ body {
     word-spacing: 0px;
     
 }
-.scrollbar{
-   
-}
+
 
 .dark-scheme{
     color: #ffffff;
@@ -100,6 +98,10 @@ body .owl-stage .owl-item {
 
 .de-navbar-left #wrapper {
     overflow: visible;
+}
+.menu_side_area span:hover{
+    color: black;
+
 }
 
 a,
@@ -1509,6 +1511,7 @@ header.header-light .logo-2 {
     display: inline-block;
     margin-top: 0px;
     padding: 5px 25px;
+   
 }
 
 .blog-list .blog-slider {
@@ -2792,7 +2795,9 @@ a.btn-slider:hover {
 
 a.btn-main:hover,
 .btn-main:hover {
-    color: #fff;
+    color: #000000;
+    border: 5px;
+    border-radius: 50px 15px;
     -webkit-box-shadow: 2px 2px 20px 0px rgba(var(--secondary-color-rgb), 0.5);
     -moz-box-shadow: 2px 2px 20px 0px rgba(var(--secondary-color-rgb), 0.5);
     box-shadow: 2px 2px 20px 0px rgba(var(--secondary-color-rgb), 0.5);
@@ -2854,6 +2859,9 @@ a.btn-add_to_cart {
     color: #555;
 }
 
+a.btn-main:hover{
+    color: black;
+}
 .btn-add_to_cart:before,
 a.btn-add_to_cart:before {
     font-family: "FontAwesome";
@@ -2886,9 +2894,13 @@ a.btn-line {
 .bb:hover{
     color:#e50000;
 }
+a.btn-main:hover{
+    color: black;
+    border-radius: 50px 15px;
+}
+a.btn-main,
 .btn-main:hover{
-   
-    background-color: #FFF;
+     color: black;
    
 
 }
@@ -2913,6 +2925,7 @@ header:not(.header-light) a.btn-line,
 
 a.btn-main.btn-white {
     background: #ffffff;
+    
 }
 
 header a.btn-main,
@@ -3955,7 +3968,11 @@ span.teaser {
 .text-white h4,
 .text-white h5,
 .text-white h6 {
-    color: #fff;
+    color: orangered;
+    text-shadow: 5px 5px 8px #FF0000;
+}
+.text-red  h1{
+    color: white;
 }
 
 .de_light .text-white h1,
@@ -3964,7 +3981,7 @@ span.teaser {
 .de_light .text-white h4,
 .de_light .text-white h5,
 .de_light .text-white h6 {
-    color: #fff;
+    color: white;
 }
 
 .de_light h1,
@@ -3974,6 +3991,9 @@ span.teaser {
 .de_light h5,
 .de_light h6 {
     color: #202020;
+}
+.multi-effect h1{
+    color: #e50000;
 }
 
 /* feature box style 1 */
@@ -8493,6 +8513,8 @@ p.lead {
     line-height: 1.7em;
     margin-top: 0;
     font-weight: 300;
+    color: whitesmoke;
+    text-shadow: 3px 0  3px #e50000;
 }
 
 p.lead.big {
