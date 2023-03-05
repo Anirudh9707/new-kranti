@@ -138,7 +138,7 @@ header {
     width: 100%;
     position: absolute;
     left: 0;
-    z-index: 1001;
+    z-index: 15;
     background: #2b313f;
     margin: 0;
 }
@@ -1217,7 +1217,7 @@ header.header-mobile .logo {
 }
 
 header.header-mobile .btn-rsvp {
-    padding-top: 40px;
+    padding-top: 10px;
     height: 90px;
 }
 
@@ -3900,6 +3900,18 @@ span.teaser {
     line-height: 70px;
     letter-spacing: 1rem;
 }
+@media (max-width: 380px) {
+	.wm {
+		font-size: 90px;
+        line-height: 50px;
+	}
+}
+@media (max-width: 430px) {
+	.wm {
+		font-size: 90px;
+        line-height: 50px;
+	}
+}
 
 
 .text-light {
@@ -6024,6 +6036,14 @@ i.font60 {
     margin: 0;
     padding: 0;
     font-weight: bold;
+}
+@media (max-width: 380px) {
+	.de_tab, .tab_style_4, .de_nav{
+		font-weight: 5px;
+        color:#007bff;
+        
+    
+	}
 }
 
 .de_tab .de_nav li {
@@ -13349,7 +13369,7 @@ a.read_more i {
 }
 
 .tabs_wrapper {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .hide-content{
@@ -14469,7 +14489,7 @@ a.btn-slider:hover {
       #de-carousel .carousel-inner,
       #de-carousel .carousel-item,
       #de-carousel .carousel-item.active {
-        height: 100vh;
+        height: 113vh;
       }
 
       #de-carousel .carousel-item:nth-child(1) {
@@ -16263,6 +16283,11 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 @media only screen and (max-width: 360px) {
     #topbar {
         display: none;
+    }
+}
+@media (max-width: 380px) {
+     .rg  {
+        font-size:48px;
     }
 }
 
