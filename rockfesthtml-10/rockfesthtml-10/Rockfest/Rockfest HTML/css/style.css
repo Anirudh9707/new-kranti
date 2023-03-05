@@ -8797,6 +8797,9 @@ a.de-card:hover {
     margin-top: 5rem;
     font-size: 1.3rem;
 }
+.space-top:hover{
+    color: black;
+}
 .space-top{
     padding:2rem;
     font-size:2rem;
