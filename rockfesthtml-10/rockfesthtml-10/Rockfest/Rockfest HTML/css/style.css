@@ -14489,7 +14489,7 @@ a.btn-slider:hover {
       #de-carousel .carousel-inner,
       #de-carousel .carousel-item,
       #de-carousel .carousel-item.active {
-        height: 113vh;
+        height: 100vh;
       }
 
       #de-carousel .carousel-item:nth-child(1) {
@@ -16288,7 +16288,7 @@ html:not(.ie-11):not(.ie-10) .countdown-circle {
 @media (max-width: 380px) {
      .rg  {
         font-size:45px;
-        
+
     }
 }
 
