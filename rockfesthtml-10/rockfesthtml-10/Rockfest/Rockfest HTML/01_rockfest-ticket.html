@@ -25,6 +25,24 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <style>
+         select {
+      background-color: orange;
+      color: #e55555;
+      border: none;
+      padding: 10px;
+      border-width: 2px;
+      border-color: black;
+    }
+    option{
+        background-color: black;
+        color: #e50000;
+        border-color: black;
+        border-width: 2px;
+        
+    }
+    </style>
+
 </head>
 
 <body class="dark-scheme">
@@ -152,7 +170,13 @@
                                         <h4>Event Name <span class="id-color"></span></h4>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type='text' name='ticket-b' id='ticket-b' class="form-control" placeholder="Event Name" required>
+                                        
+                                        
+    <select class="col-md-12 mr-30" id="my-dropdown" name="my-dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
+    </select>
                                     </div>
 
                                     <div class="clearfix"></div>
