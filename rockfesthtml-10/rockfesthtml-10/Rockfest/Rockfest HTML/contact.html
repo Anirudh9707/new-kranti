@@ -25,24 +25,6 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
-    <style>
-         select {
-      background-color: orange;
-      color: #e55555;
-      border: none;
-      padding: 10px;
-      border-width: 2px;
-      border-color: black;
-    }
-    option{
-        background-color: black;
-        color: #e50000;
-        border-color: black;
-        border-width: 2px;
-        
-    }
-    </style>
-
 </head>
 
 <body class="dark-scheme">
@@ -80,15 +62,15 @@
                                     <li><a href="index.html">Pages</a>
                                         <ul>
                                             <li><a href="01_rockfest-blog.html">Events</a></li>
-                                            <li><a href="01_rockfest-contact.html">Contact</a></li>
-                                            <li><a href="01_rockfest-gallery.html">Gallery</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="gallery.html">Gallery</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                             <div class="de-flex-col">
                                 <div class="menu_side_area">
-                                    <a style="border-radius: 15px 50px 30px;" href="video.html" class="btn-main"><i class="fa fa-sign-in"></i><span>WATCH PROMO</span></a>
+                                    <a style="border-radius: 15px 50px 30px;" href="video.html" class="btn-main"><i class="fa fa-sign-in"></i><span>PROMO VIDEO</span></a>
                                     <span id="menu-btn"></span>
                                 </div>
                             </div>
@@ -109,9 +91,7 @@
                             <div class="row">
                                 
                                 <div class="col-md-12 text-center">
-									<h1>Registration</h1>
-                                    <h2>SOLO EVENTS</h2>
-                                    <h4> </h4>
+									<h1>Contact</h1>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -126,85 +106,69 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-md-8">
                             <form name="contactForm" id='contact_form' class="form-border" method="post">
-                                <div class="row g-custom-x align-items-center">
-                                    
-                                    <div class="col-md-6">
-                                        <h4>Your Name</h4>
+                                <div class="row g-custom-x">
+                                    <div class="col-md-12">
+                                        <h3>Send Us Message</h3>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type='text' name='Name' id='name' class="form-control" placeholder="Name" required>
-                                    </div>
+                                        <div id='name_error' class='error'>Please enter your name.</div>
+                                        <div>
+                                            <input type='text' name='Name' id='name' class="form-control" placeholder="Your Name" required>
+                                        </div>
 
-                                    <div class="clearfix"></div>
+                                        <div id='email_error' class='error'>Please enter your valid E-mail ID.</div>
+                                        <div>
+                                            <input type='email' name='Email' id='email' class="form-control" placeholder="Your Email" required>
+                                        </div>
 
-                                    <div class="col-md-6">
-                                        <h4>Contact Details</h4>
+                                        <div id='phone_error' class='error'>Please enter your phone number.</div>
+                                        <div>
+                                            <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone" required>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type='text' name='Phone' id='phone' class="form-control" placeholder="Phone No" required>
+                                        <div id='message_error' class='error'>Please enter your message.</div>
+                                        <div>
+                                            <textarea name='message' id='message' class="form-control" placeholder="Your Message" required></textarea>
+                                        </div>
                                     </div>
-
-                                    <div class="clearfix"></div>
-
-                                    <div class="col-md-6">
-                                        <h4>Your Email</h4>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type='text' name='Email' id='email' class="form-control" placeholder="Email ID" required>
-                                    </div>
-
-                                    <div class="clearfix"></div>
-
-                                    <div class="col-md-6">
-                                        <h4>College Name<span class="id-color"></span></h4>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type='text' style="text-transform: uppercase;" name='ticket-a' id='ticket-a' class="form-control" placeholder="College Name" required >
-                                    </div>
-
-                                    <div class="clearfix"></div>
-
-                                    <div class="col-md-6">
-                                        <h4>Event Name <span class="id-color"></span></h4>
-                                    </div>
-                                    <div class="col-md-6">
-                                        
-                                        
-    <select class="col-md-12 mr-30" id="my-dropdown" name="my-dropdown">
-      <option value="option1">Option 1</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-    </select>
-                                    </div>
-
-                                    <div class="clearfix"></div>
-
-                                    <div class="col-md-6">
-                                        <h4>Year Of Study <span class="id-color"></span></h4>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type='text' name='ticket-c' id='ticket-c' class="form-control" placeholder="Year" required>
-                                    </div>
-
 
                                     <div class="col-md-12">
-                                        
+                                        <div class="g-recaptcha" data-sitekey="copy-your-site-key-here"></div>
                                         <p id='submit' class="mt20">
                                             <input type='submit' id='send_message' value='Submit Form' class="btn btn-main">
                                         </p>
+                                        <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                                        
                                     </div>
                                 </div>
                             </form>
 
                             <div id="success_message" class='success'>
-                                Your Registration has been successfully completed, Thanks for your time. Refresh this page if you want to make more Registrations.
+                                Your message has been sent successfully. Refresh this page if you want to send more messages.
                             </div>
                             <div id="error_message" class='error'>
                                 Sorry there was an error sending your form.
                             </div>
 
+                        </div>
+
+                        <div id="sidebar" class="col-md-4">
+
+                            <div class="widget widget_text">
+                                <h3>Contact Info</h3>
+                                <address>
+                                    <span><strong>Address:</strong>100 S Main St, Los Angeles, CA</span>
+                                    <span><strong>Phone:</strong>(208) 333 9296</span>
+                                    <span><strong>Fax:</strong>(208) 333 9298</span>
+                                    <span><strong>Email:</strong><a href="mailto:contact@example.com">contact@example.com</a></span>
+                                    <span><strong>Web:</strong><a href="#test">http://example.com</a></span>
+                                    <span><strong>Open</strong>Sunday - Friday 08:00 - 18:00</span>
+                                </address>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,8 +198,8 @@
                             <h5>Quick Links</h5>
                             <ul>
                                 <li><a href="01_rockfest-blog.html">Blog</a></li>
-                                <li><a href="01_rockfest-gallery.html">Gallery</a></li>
-                                <li><a href="01_rockfest-contact.html">Contact Us</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                                 <li><a href="index.html#section-tickets">Ticket</a></li>
                             </ul>
                         </div>
