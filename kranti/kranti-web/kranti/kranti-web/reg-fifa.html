@@ -25,6 +25,23 @@
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <style>
+          select {
+      background-color: orange;
+      color: #e55555;
+      border: none;
+      padding: 10px;
+      border-width: 2px;
+      border-color: black;
+    }
+    option{
+        background-color: black;
+        color: #e50000;
+        border-color: black;
+        border-width: 2px;
+        
+    }
+    </style>
 </head>
 
 <body class="dark-scheme">
@@ -79,14 +96,15 @@
             <div id="top"></div>
             
             <!-- section begin -->
-            <section id="subheader" class="text-light" data-bgimage="url(images/background/t5.jpg) top">
+            <section id="subheader" class="text-light" data-bgimage="url(images/background/subheader.jpg) bottom">
                     <div class="center-y relative text-center">
                         <div class="container">
                             <div class="row">
                                 
-                                <div class="col-md-8 offset-md-2 text-center">
-                                    <h1>Fifa</h1>
-                                    <tag>(Offline) </tag>
+                                <div class="col-md-12 text-center">
+									<h1>Registration</h1>
+                                    <h2>FIFA</h2>
+                                    <h4> </h4>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -94,115 +112,150 @@
                     </div>
             </section>
             <!-- section close -->
+            
 
             <!-- section begin -->
-            <section aria-label="section">
+			<section aria-label="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
-                            <div class="blog-read">
 
-                                <div class="post-text">
+                        <div class="col-md-8 offset-md-2">
+                            <form name="contactForm" id='contact_form' class="form-border" method="post">
+                                <div class="row g-custom-x align-items-center">
                                     
+                                    <!-- <div class="col-md-6">
+                                        <h4>Your Name</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Name' id='name' class="form-control" placeholder="Name" required>
+                                    </div>
 
-                                    <blockquote>FIFA brings the WORLD’s game to console. Wanna prove you’re the best at FIFA? Then this is a stage where you get to showcase your skills with the joystick in the game of FIFA and a chance to compete against the best to prove that you’re the best of the best at FIFA.
-                                    </blockquote>
+                                    <div class="clearfix"></div>
 
+                                    <div class="col-md-6">
+                                        <h4>Contact Details</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Phone' id='phone' class="form-control" placeholder="Phone No" required>
+                                    </div> -->
+
+                                    <!-- <div class="clearfix"></div> -->
+
+                                    <div class="col-md-6">
+                                        <h4>Your Email</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Email' id='email' class="form-control" placeholder="Email ID" required>
+                                    </div>
+
+
+                                    <div class="clearfix"></div>
+                                    <div class="col-md-6">
+                                        <h4>Team Name</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Team-Name' id='team-Name' class="form-control" placeholder="Team Name" required>
+                                    </div>
+
+
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-6">
+                                        <h4>College Name<span class="id-color"></span></h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' style="text-transform: uppercase;" name='ticket-a' id='ticket-a' class="form-control" placeholder="College Name" required >
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <div class="col-md-6">
+                                        <h4>Member Name 1</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Mem-Name-1' id='mem-Name-1' class="form-control" placeholder="Member Name" required>
+                                    </div>
+
+
+                                    <div class="clearfix"></div>
+                                    <div class="col-md-6">
+                                        <h4>Member Name 2</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Mem-Name-2' id='mem-Name-2' class="form-control" placeholder="Member Name" >
+                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-6">
+                                        <h4>MEMBER 1 PHONE NO</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Phone-1' id='phone-1' class="form-control" placeholder="Phone No" required>
+                                    </div> 
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-6">
+                                        <h4>MEMBER 2 PHONE NO</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='Phone-2' id='phone-2' class="form-control" placeholder="Phone No" >
+                                    </div> 
+
+
+
+
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-6">
+                                        <h4>Online Event Name <span class="id-color"></span></h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="col-md-12 mr-30" id="my-dropdown" name="my-dropdown">
+                                         <option value="option1">FIFA</option>
+                                         <!-- <option value="option2">Option 2</option>
+                                         <option value="option3">Option 3</option> -->
+                                       </select>
+                                    </div>
                                     
+                                    <div class="clearfix"></div>
 
-                                </div>
-                                <div class="widget mt-0">
-                                    <h5>Contact Info</h5>
-                                    <address class="s1">
+                                    <div class="col-md-6">
+                                        <h4>Year Of Study <span class="id-color"></span></h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type='text' name='ticket-c' id='ticket-c' class="form-control" placeholder="Year" required>
+                                    </div>
+
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-6">
+                                        <h4>Upload image <span class="id-color"></span></h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="file" id="myFile"  name="filename" required>
+                                    </div>
+
+                                    <div class="col-md-12">
                                         
-                                        <span><i class="id-color fa fa-phone fa-lg"></i>Sanjay &nbsp;+91 9952022865 </span>
-                                        <span><i class="id-color fa fa-phone fa-lg"></i>Kaushik Vishal &nbsp;+91  73584 72065</span>
-                                    </address>
-                                </div>
-
-                                <div class="widget mt-0">
-                                    <h5>Payment Info (gpay/paytm)</h5>
-                                    <address class="s1">
-
-                                        <span><i class="id-color fa fa-phone fa-lg"></i>Kaushik Vishal &nbsp;+91  73584 72065  </span>
-                                        
-                                    </address>
-                                </div>
-
-                            </div>
-
-                            <div class="spacer-single"></div>
-
-                            <div id="blog-comment">
-                                
-
-                                <div class="spacer-single"></div>
-
-                                <div id="comment-form-wrapper">
-                                    
-                                    <div class="comment_form_holder ">
-                                        <form id="contact_form" name="form1" class="form-border" method="post" action="#">
-
-                                            
-
-                                            <p id="btnsubmit">
-                                                <input type="submit" id="send" value="Register" class="btn btn-main" /></p>
-
-
-
-                                        </form>
+                                        <p id='submit' class="mt20">
+                                            <input type='submit' id='send_message' value='Submit Form' class="btn btn-main">
+                                        </p>
                                     </div>
                                 </div>
+                            </form>
+
+                            <div id="success_message" class='success'>
+                                Your Registration has been successfully completed, Thanks for your time. Refresh this page if you want to make more Registrations.
+                            </div>
+                            <div id="error_message" class='error'>
+                                Sorry there was an error sending your form.
                             </div>
 
-                        </div>
-
-                        <div id="sidebar" class="col-md-4">
-                           
-                            <div class="de-box widget widget-post">
-                                <h4>Rules And Guidelines</h4>
-                                <div class="small-border"></div>
-                                <ul>      
-                                    <li><span class="date">1</span><a href="#">Entry fee is Rs.60 per person.
-                                    </a></li>                      
-                                    
-                                    <li><span class="date">2</span><a href="#"> Kindly contact the Coordinators before making the payment. 
-                                    </a></li>          
-                                    <li><span class="date">3</span><a href="#">This is a TEAM (of 2) event conducted on a KNOCKOUT basis.
-                                    </a></li>
-                                    <li><span class="date">4</span><a href="#">Participants without a team member will be paired up by the organizers.
-                                    </a></li>
-                                    <li><span class="date">5</span><a href="#">8 minutes per game (4 mins per half)
-                                    </a></li>
-                                    <li><span class="date">6</span><a href="#">Participants must bring their own JOYSTICKS.
-                                    </a></li>
-                                    <li><span class="date">7</span><a href="#">No SETTINGS shall be changed.
-                                    </a></li>
-                                    <li><span class="date">8</span><a href="#">	In case of tiebreakers, the match will proceed to penalties..
-                                    </a></li>
-                                    <li><span class="date">9</span><a href="#">EVENT WILL NOT BE DELAYED for any particular participant at any cost.
-
-                                    </a></li>
-                                    <li><span class="date">10</span><a href="#">Participants who are found disobeying the rules will be DISQUALIFIED.
-
-                                    </a></li>
-                                    <li><span class="date">11</span><a href="#">
-                                        Certificates will be provided for all the participants.
-                                    </a></li>
-
-                                    <li><span class="date">12</span><a href="#"> 
-                                        Breakage of any property of host is finable!
-                                    </a></li>
-                                    <li><span class="date">13</span><a href="#">If slots are available, you can also register on the day of the event.
-                                    </a></li>
-                                </ul>
-
-                                </ul>
-                                </ul>
-                            </div>
-
-                            
-                            
                         </div>
                     </div>
                 </div>
@@ -218,7 +271,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-1">
-                        
+                        <div class="widget">
+                            <h5>Contact Info</h5>
+                            <address class="s1">
+                                <span><i class="id-color fa fa-map-marker fa-lg"></i>08 W 36th St, New York, NY 10001</span>
+                                <span><i class="id-color fa fa-phone fa-lg"></i>+1 333 1000 2000</span>
+                                <span><i class="id-color fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">contact@example.com</a></span>
+                            </address>
+                        </div>
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-1">
                         <div class="widget">
@@ -308,6 +368,8 @@
     <script src="js/jquery.lazy.plugins.min.js"></script>
     <script src="js/jquery.smartsticky.min.js"></script>
     <script src="js/designesia.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
 
 
 </body>
