@@ -3969,7 +3969,7 @@ span.teaser {
 .text-white h5,
 .text-white h6 {
     color: orangered;
-    text-shadow: 5px 5px 8px #FF0000;
+    text-shadow: 5px 5px 8px #FF0000; 
 }
 .text-red  h1{
     color: white;
